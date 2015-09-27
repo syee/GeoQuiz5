@@ -30,6 +30,4 @@ public class Question {
 
     }
 
-    //adding test comment
-
 }
