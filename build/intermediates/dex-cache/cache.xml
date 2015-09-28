@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/stevenyee/Documents/mobileComputing/AndroidStudioProjects/GeoQuiz3/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/stevenyee/Documents/mobileComputing/AndroidStudioProjects/GeoQuiz3/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-9dbd04fb37629019131ca59537062e332b72a32b.jar" />
+    </item>
+    <item
+        jar="/Users/stevenyee/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/stevenyee/Documents/mobileComputing/AndroidStudioProjects/GeoQuiz3/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-129ba02116c79fa8cc48419111cf068d9292d8c8.jar" />
+    </item>
+    <item
+        jar="/Users/stevenyee/Documents/mobileComputing/AndroidStudioProjects/GeoQuiz3/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/stevenyee/Documents/mobileComputing/AndroidStudioProjects/GeoQuiz3/app/build/intermediates/pre-dexed/debug/classes-3f23a6873ce110bb7d214a53f865e68ee93a2a82.jar" />
+    </item>
+    <item
+        jar="/Users/stevenyee/Documents/mobileComputing/AndroidStudioProjects/GeoQuiz3/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/stevenyee/Documents/mobileComputing/AndroidStudioProjects/GeoQuiz3/app/build/intermediates/pre-dexed/debug/classes-703f657bc29a0243f3e5a73c0a5b73b9c5f07851.jar" />
+    </item>
+
+</items>
