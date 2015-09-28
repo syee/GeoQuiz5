@@ -23,7 +23,8 @@ public class QuizActivity extends AppCompatActivity {
     private Button mCheatButton;
     private boolean mIsCheater;
     private static final String TAG = "QuizActivity";
-    private static final String KEY_INDEX = "index";
+    private static final String KEY_INDEX_QUESTION = "Question";
+    private static final String KEY_INDEX_CHEAT = "Cheat";
     private static final int REQUEST_CODE_CHEAT = 0;
     private TextView mQuestionTextView;
     private Question[] mQuestionBank = new Question[]{
@@ -65,7 +66,6 @@ public class QuizActivity extends AppCompatActivity {
         }
 
         if (requestCode == REQUEST_CODE_CHEAT){
-
             if (data == null) {
                 return;
             }
@@ -79,7 +79,8 @@ public class QuizActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate(Bundle) called");
 
         if (savedInstanceState != null){
-            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX_QUESTION, 0);
+            mIsCheater = savedInstanceState.getBoolean(KEY_INDEX_CHEAT, false);
         }
 
         setContentView(R.layout.activity_quiz);
@@ -159,7 +160,8 @@ public class QuizActivity extends AppCompatActivity {
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstance State");
-        savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
+        savedInstanceState.putInt(KEY_INDEX_QUESTION, mCurrentIndex);
+        savedInstanceState.putBoolean(KEY_INDEX_CHEAT, mIsCheater);
     }
 
     @Override
