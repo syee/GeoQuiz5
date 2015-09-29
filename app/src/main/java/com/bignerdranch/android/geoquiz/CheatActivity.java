@@ -19,7 +19,7 @@ public class CheatActivity extends AppCompatActivity {
     private static final String EXTRA_ANSWER_IS_TRUE = "com.bignerdranch.android.geoquiz.answer_is_true";
     private static final String EXTRA_ANSWER_SHOWN = "com.bignerdranch.android.geoquiz.answer_shown";
     private static final String KEY_INDEX_CHEAT = "Cheat";
-    private static final String KEY_LIST_CHEAT = "CheatList";
+//    private static final String KEY_LIST_CHEAT = "CheatList";
     private static final String TAG = "CheatActivity";
     private ArrayList<Integer> cheatList = new ArrayList<Integer>();
     private static final String EXTRA_QUESTION_NUMBER = "com.bignerdranch.android.geoquiz.question_number";
@@ -37,9 +37,9 @@ public class CheatActivity extends AppCompatActivity {
                 setAnswerShownResult(true);
                 mAnswerShown = true;
             };
-            if((savedInstanceState.getIntegerArrayList(KEY_LIST_CHEAT)!= null)){
-                cheatList = savedInstanceState.getIntegerArrayList(KEY_LIST_CHEAT);
-            };
+//            if((savedInstanceState.getIntegerArrayList(KEY_LIST_CHEAT)!= null)){
+//                cheatList = savedInstanceState.getIntegerArrayList(KEY_LIST_CHEAT);
+//            };
         }
 
         setContentView(R.layout.activity_cheat);
@@ -60,7 +60,7 @@ public class CheatActivity extends AppCompatActivity {
                 }
                 mAnswerShown = true;
                 setAnswerShownResult(true);
-                cheatList.add(getIntent().getIntExtra(EXTRA_QUESTION_NUMBER, -1));
+//                cheatList.add(getIntent().getIntExtra(EXTRA_QUESTION_NUMBER, -1));
             }
         });
 
@@ -104,7 +104,7 @@ public class CheatActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstance State");
         savedInstanceState.putBoolean(KEY_INDEX_CHEAT, mAnswerShown);
-        savedInstanceState.putIntegerArrayList(KEY_LIST_CHEAT, cheatList);
+//        savedInstanceState.putIntegerArrayList(KEY_LIST_CHEAT, cheatList);
     }
 
     public static Intent newIntent(Context packageContext, boolean answerIsTrue, int question){
